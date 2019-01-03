@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".UpdateInfoKampus">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- TextView and other stuff -->
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            tools:ignore="UselessParent">
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:paddingTop="20dp">
+
+                <EditText
+                    android:id="@+id/edt_judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Judul Info Kampus"
+                    android:ems="8"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_edittext">
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:paddingTop="10dp">
+
+                <EditText android:id="@+id/edt_desk"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:ems="8"
+                    android:textSize="16dp"
+                    android:padding="10dp"
+                    android:gravity="left|top"
+                    android:inputType="text|textMultiLine"
+                    android:hint="TULIS DESKRIPSI"
+                    android:background="@drawable/rounded_edittext"/>
+            </TableRow>
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+                <TextView
+                    android:id="@+id/tv_pathphoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:paddingTop="10dp">
+                <ImageView
+                    android:id="@+id/imV_Foto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:scaleType="fitXY"
+                    tools:ignore="ContentDescription" />
+            </TableRow>
+
+            <TableRow
+                android:layout_height="50dp"
+                android:layout_width="fill_parent"
+                android:paddingTop="10dp">
+                <Button
+                    android:id="@+id/bt_simpan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"
+                    android:text="Simpan"
+                    android:background="@drawable/buttonshape"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

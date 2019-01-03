@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Pmb</string>
+    <string name="title_shop">Home</string>
+    <string name="title_gifts">Help</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_help">Help</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_bottom_nav">BottomNav</string>
+    <string name="title_activity_bottom">Bottom</string>
+    <string name="title_maps">Maps</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
